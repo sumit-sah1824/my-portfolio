@@ -6,7 +6,16 @@
   <title>Blogs | Sumit Sah</title>
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+  <!-- MathJax configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      }
+    };
+  </script>
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -30,12 +39,23 @@
 
   <main>
     <h2>My Blog</h2>
+
     <article>
-      <h3>Gradient Descent Intuition</h3>
-      <p>Consider the quadratic loss function: \\( f(x) = \\frac{1}{2}x^2 \\)</p>
-      <p>Its gradient is \\( \\nabla f(x) = x \\), and the update rule becomes:</p>
-      <p>\\[ x_{t+1} = x_t - \\eta x_t = (1 - \\eta)x_t \\]</p>
-      <p>We see exponential decay when \\( 0 < \\eta < 1 \\).</p>
+      <h3>🧠 Gradient Descent and Convergence</h3>
+      <p>Consider a quadratic loss function:</p>
+      <p>\[ f(x) = \frac{1}{2}x^2 \]</p>
+
+      <p>The gradient is \( \nabla f(x) = x \), so the update becomes:</p>
+      <p>\[ x_{t+1} = x_t - \eta x_t = (1 - \eta)x_t \]</p>
+
+      <p>This results in exponential decay when \( 0 < \eta < 1 \).</p>
+    </article>
+
+    <article>
+      <h3>🔁 Projection in Online Learning</h3>
+      <p>In constrained optimization, we use projection:</p>
+      <p>\[ x_{t+1} = \Pi_{\mathcal{X}}(x_t - \eta \nabla f_t(x_t)) \]</p>
+      <p>Where \( \Pi_{\mathcal{X}} \) projects back into feasible set \( \mathcal{X} \).</p>
     </article>
   </main>
 
