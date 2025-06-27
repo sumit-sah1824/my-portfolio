@@ -18,14 +18,16 @@ body {
   z-index: -1;
 }
 
-/* Container that wraps main content */
+/* Container with side margin */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.5); /* 👈 translucent dark panel */
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin-left: 2cm;
+  margin-right: 2cm;
 }
 
 /* Header/Nav */
@@ -78,9 +80,13 @@ nav ul {
   margin: 0;
 }
 
-/* Main content */
+/* Main content area */
 main {
-  margin-top: 2rem;
+  text-align: left; /* 👈 content text left-aligned */
+}
+
+/* Title centered */
+main h2 {
   text-align: center;
 }
 
