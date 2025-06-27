@@ -6,22 +6,26 @@
   <title>Sumit Sah | Senior Research Fellow</title>
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <h1>Sumit Sah</h1>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#talks">Talks</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('research')">Research</a></li>
+        <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+        <li><a href="#" onclick="showSection('talks')">Talks</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about" class="section">
+  <section id="about" class="section active">
     <h2>About Me</h2>
     <p>I am a senior research fellow at IIT Dharwad working on federated optimization, non-convex learning theory, and applied ML.</p>
   </section>
@@ -55,5 +59,12 @@
   <footer>
     <p>&copy; 2025 Sumit Sah. All rights reserved.</p>
   </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
