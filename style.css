@@ -7,29 +7,28 @@ body {
   background-color: #0a0a1f;
 }
 
-/* Particle background */
+/* Particle background (fully behind everything) */
 #particles-js {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000010;
   z-index: -1;
+  background: #000010;
 }
 
+/* Content container */
 .container {
-  width: calc(100% - 4cm); /* full width minus 2cm on both sides */
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* dark glass effect */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-
-/* Header/Nav */
+/* Header and nav bar */
 header {
   background: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
@@ -79,12 +78,11 @@ nav ul {
   margin: 0;
 }
 
-/* Main content area */
+/* Main content */
 main {
-  text-align: left; /* 👈 content text left-aligned */
+  text-align: left;
 }
 
-/* Title centered */
 main h2 {
   text-align: center;
 }
