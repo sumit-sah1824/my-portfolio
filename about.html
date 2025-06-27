@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Animated Background -->
+  <div id="particles-js"></div>
   <header>
 <nav>
   <div class="logo-block">
@@ -30,5 +32,43 @@
   <footer>
     <p>&copy; 2025 Sumit Sah. All rights reserved.</p>
   </footer>
+
+  <!-- Load Particles.js *AFTER* DOM is ready -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": { "value": 60, "density": { "enable": true, "value_area": 800 }},
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.2 },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.1,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": false },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
