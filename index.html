@@ -7,11 +7,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-  <!-- Load Particles.js -->
+  <!-- Load particles.js -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Config: Faded dots and lines for subtle background -->
 <script>
-  particlesJS.load('particles-js', 'particles.json', function () {
-    console.log('particles.js loaded!');
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": { "enable": true, "value_area": 800 }
+      },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.2 },       // 👈 FADED dots
+      "size": { "value": 3, "random": true },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.1,                 // 👈 FADED lines
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "grab" },
+        "onclick": { "enable": false },
+        "resize": true
+      }
+    },
+    "retina_detect": true
   });
 </script>
 <body>
