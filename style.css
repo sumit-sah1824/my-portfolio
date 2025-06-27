@@ -1,10 +1,10 @@
-/* Global styles */
+/* Global Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Gloria Hallelujah', cursive;
   color: white;
-  background-color: #0a0a1f; /* dark space-like background */
+  background-color: #0a0a1f;
 }
 
 /* Particle background */
@@ -18,12 +18,23 @@ body {
   z-index: -1;
 }
 
-/* Layout styling */
-header, main, footer {
+/* Container that wraps main content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 2rem;
+  background: rgba(0, 0, 0, 0.5); /* 👈 translucent dark panel */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Navigation */
+/* Header/Nav */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -31,29 +42,6 @@ nav {
   flex-wrap: wrap;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Logo */
 .logo-block {
   display: flex;
   align-items: center;
@@ -67,7 +55,35 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* Main profile pic */
+nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main content */
+main {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -80,6 +96,5 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
   opacity: 0.6;
 }
