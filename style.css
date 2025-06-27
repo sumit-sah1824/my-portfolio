@@ -18,17 +18,16 @@ body {
   z-index: -1;
 }
 
-/* Container with side margin */
 .container {
+  width: calc(100% - 4cm); /* full width minus 2cm on both sides */
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  margin-left: 2cm;
-  margin-right: 2cm;
 }
+
 
 /* Header/Nav */
 header {
