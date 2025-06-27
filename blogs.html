@@ -4,34 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blogs | Sumit Sah</title>
+
+  <!-- Site Font -->
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+  <!-- Math Font: Computer Modern Unicode (LaTeX Style) -->
+  <link href="https://cdn.jsdelivr.net/npm/cmu-serif@1.0.0-beta.3/index.min.css" rel="stylesheet" />
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="style.css" />
-  
- <!-- ✅ 1. Load LaTeX Math Font -->
-<link href="https://cdn.jsdelivr.net/npm/cmu-serif@1.0.0-beta.3/index.min.css" rel="stylesheet" />
 
-<!-- ✅ 2. Set Math Font Styling -->
-<style>
-  .mjx-chtml {
-    font-family: 'CMU Serif', 'Latin Modern Math', 'STIX Math', 'Cambria Math', serif !important;
-    font-style: normal;
-    font-weight: normal;
-  }
-</style>
-
-<!-- ✅ 3. MathJax Config + Script -->
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]']]
+  <!-- Force MathJax to use standard math font -->
+  <style>
+    .mjx-chtml {
+      font-family: 'CMU Serif', 'Latin Modern Math', 'STIX Math', 'Cambria Math', serif !important;
+      font-style: normal;
+      font-weight: normal;
     }
-  };
-</script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </style>
 
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
+
 <body>
   <header>
     <nav>
