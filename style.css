@@ -118,4 +118,13 @@ article h3 {
   z-index: -1;
   background-color: #1b1b1b; /* Optional: set a dark backdrop */
 }
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.4);  /* 👈 Optional dim background */
+}
 
