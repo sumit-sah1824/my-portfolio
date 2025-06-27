@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs | Sumit Sah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-block">
+        <img src="avatar.jpg" alt="Sumit Sah" class="corner-pic">
+        <h1><a href="index.html">Sumit Sah</a></h1>
+      </div>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>My Blog</h2>
+    <article>
+      <h3>Gradient Descent Intuition</h3>
+      <p>Consider the quadratic loss function: \\( f(x) = \\frac{1}{2}x^2 \\)</p>
+      <p>Its gradient is \\( \\nabla f(x) = x \\), and the update rule becomes:</p>
+      <p>\\[ x_{t+1} = x_t - \\eta x_t = (1 - \\eta)x_t \\]</p>
+      <p>We see exponential decay when \\( 0 < \\eta < 1 \\).</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sumit Sah. All rights reserved.</p>
+  </footer>
+</body>
+</html>
