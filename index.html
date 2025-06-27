@@ -11,9 +11,10 @@
 </head>
 
 <body>
-  <!-- Background animation -->
+  <!-- Animated Background -->
   <div id="particles-js"></div>
 
+  <!-- Header with logo and nav -->
   <header>
     <nav>
       <div class="logo-block">
@@ -31,17 +32,21 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Welcome</h2>
-    <p>I am a senior research fellow at IIT Dharwad working on federated optimization, non-convex learning theory, and applied ML.</p>
-    <img src="avatar.jpg" alt="Sumit Sah" class="profile-pic">
-  </main>
+  <!-- Main content in a dark translucent box -->
+  <div class="container">
+    <main>
+      <h2>Welcome</h2>
+      <p>I am a senior research fellow at IIT Dharwad working on federated optimization, non-convex learning theory, and applied ML.</p>
+      <img src="avatar.jpg" alt="Sumit Sah" class="profile-pic">
+    </main>
+  </div>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Sumit Sah. All rights reserved.</p>
   </footer>
 
-  <!-- Load Particles.js after DOM -->
+  <!-- Particle JS -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     particlesJS('particles-js', {
