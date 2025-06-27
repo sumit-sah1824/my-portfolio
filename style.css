@@ -1,22 +1,29 @@
-* {
+/* Global styles */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Gloria Hallelujah', cursive;
-}
-
-body {
-  background: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
-}
-
-header {
-  background: #2c3e50;
   color: white;
-  padding: 1rem 2rem;
+  background-color: #0a0a1f; /* dark space-like background */
 }
 
+/* Particle background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000010;
+  z-index: -1;
+}
+
+/* Layout styling */
+header, main, footer {
+  padding: 2rem;
+}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -24,98 +31,55 @@ nav {
   flex-wrap: wrap;
 }
 
-nav h1 {
-  font-size: 1.8rem;
-}
-
 nav ul {
-  display: flex;
-  gap: 1rem;
   list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li a {
-  color: white;
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #ffffff;
   text-decoration: none;
-  padding: 0.4rem;
+  font-size: 1.1rem;
 }
 
-nav ul li a:hover {
-  background-color: #34495e;
-  border-radius: 5px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-main {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #2c3e50;
-  display: block;
-  margin: 2rem auto;
+/* Logo */
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .corner-pic {
   width: 50px;
   height: 50px;
-  object-fit: cover;
   border-radius: 50%;
-  margin-right: 10px;
+  object-fit: cover;
 }
 
-.logo-block {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Main profile pic */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  object-fit: cover;
 }
 
-nav h1 a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
 }
-
-main {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-article {
-  margin-bottom: 2rem;
-}
-
-article h3 {
-  color: #2c3e50;
-  margin-top: 2rem;
-}
-
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.4);  /* 👈 Optional dim background */
-}
-
