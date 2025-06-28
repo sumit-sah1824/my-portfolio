@@ -39,6 +39,8 @@
 <body>
   <!-- Animated Background -->
   <div id="particles-js"></div>
+
+  <!-- Navigation -->
   <header>
     <nav>
       <div class="logo-block">
@@ -50,39 +52,43 @@
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="talks.html">Talks</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="blogs.html" class="active">Blogs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Blog Content -->
   <main>
-    <h2>My Blog</h2>
+    <div class="container">
+      <h2>My Blog</h2>
 
-    <article>
-      <h3>🧠 Gradient Descent and Convergence</h3>
-      <p>Consider a quadratic loss function:</p>
-      <p>\[ f(x) = \frac{1}{2}x^2 \]</p>
+      <article>
+        <h3>🧠 Gradient Descent and Convergence</h3>
+        <p>Consider a quadratic loss function:</p>
+        <p>\[ f(x) = \frac{1}{2}x^2 \]</p>
 
-      <p>The gradient is \( \nabla f(x) = x \), so the update becomes:</p>
-      <p>\[ x_{t+1} = x_t - \eta x_t = (1 - \eta)x_t \]</p>
+        <p>The gradient is \( \nabla f(x) = x \), so the update becomes:</p>
+        <p>\[ x_{t+1} = x_t - \eta x_t = (1 - \eta)x_t \]</p>
 
-      <p>This results in exponential decay when \( 0 < \eta < 1 \).</p>
-    </article>
+        <p>This results in exponential decay when \( 0 < \eta < 1 \).</p>
+      </article>
 
-    <article>
-      <h3>🔁 Projection in Online Learning</h3>
-      <p>In constrained optimization, we use projection:</p>
-      <p>\[ x_{t+1} = \Pi_{\mathcal{X}}(x_t - \eta \nabla f_t(x_t)) \]</p>
-      <p>Where \( \Pi_{\mathcal{X}} \) projects back into feasible set \( \mathcal{X} \).</p>
-    </article>
+      <article>
+        <h3>🔁 Projection in Online Learning</h3>
+        <p>In constrained optimization, we use projection:</p>
+        <p>\[ x_{t+1} = \Pi_{\mathcal{X}}(x_t - \eta \nabla f_t(x_t)) \]</p>
+        <p>Where \( \Pi_{\mathcal{X}} \) projects back into feasible set \( \mathcal{X} \).</p>
+      </article>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Sumit Sah. All rights reserved.</p>
   </footer>
 
-  <!-- Load Particles.js *AFTER* DOM is ready -->
+  <!-- Load Particles.js -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     particlesJS('particles-js', {
