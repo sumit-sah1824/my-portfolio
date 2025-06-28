@@ -18,14 +18,25 @@ body {
   background: #000010;
 }
 
-/* Content container */
+/* Global container for content sections */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.5); /* dark glass effect */
+  background: rgba(0, 0, 0, 0.5); /* translucent dark glass look */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Text alignment settings inside container */
+main {
+  padding-left: 2cm;
+  padding-right: 2cm;
+  text-align: left;
+}
+
+main h2 {
+  text-align: center;
 }
 
 /* Header and nav bar */
@@ -78,15 +89,7 @@ nav ul {
   margin: 0;
 }
 
-/* Main content */
-main {
-  text-align: left;
-}
-
-main h2 {
-  text-align: center;
-}
-
+/* Profile image */
 .profile-pic {
   width: 150px;
   height: 150px;
